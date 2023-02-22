@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 public class Lab {
     /**
@@ -15,6 +16,11 @@ public class Lab {
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
     public String FizzBuzzGen(int n){
-        return "";
+        var result = "";
+        if(n%3 == 0)
+            result += "Fizz";
+        if(n%5 == 0)
+            result += "Buzz";
+        return result;
     }
 }
